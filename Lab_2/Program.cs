@@ -6,13 +6,13 @@
     {
         Program program = new Program();
         Console.WriteLine("Welcome to the Lab 2 assignment. " +
-            "Press any key to start the program!");
+            "Press 'Enter' to start the program!");
         Console.ReadLine();
         Console.Clear();
 
-       // program.Question1();
-       // program.Question2();
-        //program.Question3();
+        program.Question1();
+        program.Question2();
+        program.Question3();
         program.Question4();
 
     }
@@ -26,7 +26,7 @@
         double b = double.Parse(Console.ReadLine());
         Console.WriteLine($"Thank you! The sum of {a} + {b} = {a + b}");
         Console.WriteLine();
-        Console.WriteLine("Press any key to move to the next question.");
+        Console.WriteLine("Press 'Enter' to move to the next question.");
         Console.ReadLine();
         Console.Clear();
     }
@@ -42,7 +42,7 @@
         double d = double.Parse(Console.ReadLine());
         Console.WriteLine($"Thank you! The sum of {c} * {d} = {c * d}");
         Console.WriteLine();
-        Console.WriteLine("Press any key to move to the next question.");
+        Console.WriteLine("Press 'Enter' to move to the next question.");
         Console.ReadLine();
         Console.Clear();
 
@@ -50,6 +50,9 @@
 
     public void Question3()
     {
+        Console.WriteLine("This is the 3rd question.");
+        Console.WriteLine("Here is neatly printed list of data types.");
+        Console.WriteLine();
 
         string[] names = 
         { 
@@ -78,13 +81,17 @@
             double.MaxValue.ToString(), decimal.MaxValue.ToString()
         };
 
-
+        
         Console.WriteLine("===========================================================================================================");
         Console.WriteLine("{0,-20} {1,5} {2,30} {3,39}\n", "Type", "Bytes in memory", "Min", "Max");
         Console.WriteLine("===========================================================================================================");
         for (int i = 0; i < names.Length; i++)
         Console.WriteLine("{0,-20} {1,5} {2,40}{3,40}", names[i], size[i], min[i], max[i]);
         Console.WriteLine("===========================================================================================================");
+        Console.WriteLine();
+        Console.WriteLine("Please press enter to move to the next question.");
+        Console.ReadLine();
+        Console.Clear();
 
     }
 
@@ -93,7 +100,7 @@
         Console.WriteLine("This is the final question on the assignment.\n" +
             "Here we have created a 5 function calculator!");
         Console.WriteLine();
-        Console.WriteLine("Please press any key To Start");
+        Console.WriteLine("Please press 'Enter' To Start");
         Console.ReadLine();
         Console.Clear();
 
@@ -177,8 +184,8 @@
 
         do
         {
-            Console.WriteLine($"Your result is {result} \nWhat would you like to do next to this number?");
-            Console.WriteLine($"Type sign you wish to use. Ex (-,+,*,/,%)");
+            Console.WriteLine($"Your previous result is {result} \nWhat would you like to do next to this number?");
+            Console.WriteLine($"Type the operator sign you wish to use. Ex (-,+,*,/,%)");
             string sign = Console.ReadLine();
             Console.WriteLine("Now choose the next number you wish to use!");
             double nextNumber = double.Parse(Console.ReadLine());
