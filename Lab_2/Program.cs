@@ -10,9 +10,9 @@
         Console.ReadLine();
         Console.Clear();
 
-        //program.Question1();
-        //program.Question2();
-        //program.Question3();
+        program.Question1();
+        program.Question2();
+        program.Question3();
         program.Question4();
 
     }
