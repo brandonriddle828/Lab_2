@@ -354,6 +354,9 @@
             }
         }
         while (flag == false) ;
+        Console.Clear();
+        Console.WriteLine("a");
+        Console.WriteLine("***Thank You for using our program, Goodbye!***");
 
     }
    
